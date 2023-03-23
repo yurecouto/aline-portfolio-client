@@ -1,7 +1,7 @@
-import Teste from '@/components/MainContainer'
+import MainContainer from '@/components/MainContainer/MainContainer'
 
 export default function Home() {
   return (
-    <Teste/>
+    <MainContainer/>
   )
 }
