@@ -1,5 +1,5 @@
-import AppContainer from '@/components/AppContainer';
-import AppHeader from '@/components/AppHeader';
+import ScreensContainer from '@/components/ScreensContainer';
+import Header from '@/components/Header';
 import 'normalize.css/normalize.css';
 import About from './screens/about';
 import Contact from './screens/contact';
@@ -8,13 +8,14 @@ import Home from './screens/home';
 
 export default function App() {
   return (
-    <AppContainer>
-      <AppHeader/>
-
-      <Home/>
-      <About/>
-      <Gallery/>
-      <Contact/>
-    </AppContainer>
+    <>
+      <Header/>
+      <ScreensContainer>
+        <Home/>
+        <About/>
+        <Gallery/>
+        <Contact/>
+      </ScreensContainer>
+    </>
   )
 }

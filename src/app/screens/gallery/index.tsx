@@ -4,7 +4,7 @@ import { Container } from "./style";
 
 export default function Gallery() {
   return (
-    <Container>
+    <Container id="section-gallery">
       <p>Gallery</p>
     </Container>
   )

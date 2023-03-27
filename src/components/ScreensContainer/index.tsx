@@ -7,7 +7,7 @@ interface Props {
   children?: ReactNode;
 }
 
-export default function AppContainer({
+export default function ScreensContainer({
   children,
   }: Props) {
   return (

@@ -4,7 +4,7 @@ import { Container } from "./style";
 
 export default function About() {
   return (
-    <Container>
+    <Container id="section-about">
       <p>About</p>
     </Container>
   )
