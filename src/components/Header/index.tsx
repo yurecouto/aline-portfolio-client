@@ -14,7 +14,7 @@ export default function Header() {
 
   const handleOpen = () => {
     setIsOpen(!isOpen);
-  }
+  };
 
   useLayoutEffect(() => {
     let isMounted = true;
@@ -42,7 +42,7 @@ export default function Header() {
             <Icon
               icon={"mingcute:menu-fill"}
               onClick={handleOpen}
-              style={{height: "24px", width: "24px"}}
+              style={{height: "24px", width: "24px", marginRight: "16px"}}
             />
         )}
 

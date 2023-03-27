@@ -13,6 +13,7 @@ export const MenuButton = styled.button<IPropsHeaderButton>`
   height: 48px;
   background-color: ${theme.COLORS.HEADER_BACKGROUND};
   border-bottom: 1px solid ${theme.COLORS.HEADER_BACKGROUND};
+  font-family: 'Montserrat', sans-serif;
   cursor: pointer;
   &:hover {
     border-bottom: 1px solid ${theme.COLORS.HEADER_FONT};
