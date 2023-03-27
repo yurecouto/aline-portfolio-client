@@ -10,9 +10,11 @@ export const MenuButton = styled.button<IPropsHeaderButton>`
   width: ${({ row }) => row ? "25%" : "100%"};
   border: 0px;
   border-radius: 0px;
-  height: 40px;
-  background-color: ${theme.COLORS.HEADER_HOVER};
+  height: 48px;
+  background-color: ${theme.COLORS.HEADER_BACKGROUND};
+  border-bottom: 1px solid ${theme.COLORS.HEADER_BACKGROUND};
+  cursor: pointer;
   &:hover {
-    background-color: ${theme.COLORS.HEADER_BACKGROUND};
-  }
+    border-bottom: 1px solid ${theme.COLORS.HEADER_FONT};
+  };
 `;

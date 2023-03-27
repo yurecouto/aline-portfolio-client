@@ -1,7 +1,8 @@
 export const theme = {
   COLORS: {
-    HEADER_BACKGROUND: "#E54033",
-    HEADER_HOVER: "#0F6CBD",
-    HEADER_FONT: "",
+    HEADER_BACKGROUND: "#DDD0C8",
+    HEADER_FONT: "#000000",
+
+    PAGE_BACKGROUNG: "#FEFEFE"
   },
 };

@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { theme } from "@/themes/theme"
+
 export const Container = styled.div`
   width: 100%;
   height: auto;
@@ -8,4 +10,5 @@ export const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   border: 1px solid red;
+  background-color: ${theme.COLORS.PAGE_BACKGROUNG};
 `;

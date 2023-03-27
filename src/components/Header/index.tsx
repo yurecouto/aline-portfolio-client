@@ -2,31 +2,31 @@
 
 import { useWindowSize } from "@/hooks/window";
 import { Icon } from "@iconify/react";
-import { useEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import HeaderButton from "../HeaderButton";
 import { Container, Title, Menu, ButtonContainer, CloseContainer } from "./style";
 
 export default function Header() {
   const { width } = useWindowSize();
 
-  const [isRow, setIsRow] = useState<boolean>(width > 960)
-  const [isOpen, setIsOpen] = useState<boolean>(false)
+  const [isRow, setIsRow] = useState<boolean>(width > 960);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const handleOpen = () => {
-    setIsOpen(!isOpen)
+    setIsOpen(!isOpen);
   }
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     let isMounted = true;
 
     if (isMounted) {
       if (width > 960) {
-        setIsRow(true)
-        setIsOpen(false)
+        setIsRow(true);
+        setIsOpen(false);
       } else {
-        setIsRow(false)
-      }
-    }
+        setIsRow(false);
+      };
+    };
 
     return () => {
       isMounted = false;
@@ -42,7 +42,7 @@ export default function Header() {
             <Icon
               icon={"mingcute:menu-fill"}
               onClick={handleOpen}
-              style={{height: "28px", width: "28px"}}
+              style={{height: "24px", width: "24px"}}
             />
         )}
 
@@ -53,7 +53,7 @@ export default function Header() {
                 <Icon
                   icon={"ph:x-bold"}
                   onClick={handleOpen}
-                  style={{height: "28px", width: "28px"}}
+                  style={{height: "24px", width: "24px"}}
                 />
               </CloseContainer>
             )}
