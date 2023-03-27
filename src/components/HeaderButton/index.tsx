@@ -1,13 +1,12 @@
-"use client";
-
 import { MenuButton } from "./style";
 
 interface Props {
   section: string;
   title: string;
+  row: boolean;
 }
 
-export default function HeaderButton({title, section}: Props) {
+export default function HeaderButton({title, section, row}: Props) {
   const handleScroll = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -18,6 +17,7 @@ export default function HeaderButton({title, section}: Props) {
   return (
     <MenuButton
       onClick={() => handleScroll(section)}
+      row={row}
     >
       {title}
     </MenuButton>
